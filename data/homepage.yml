@@ -1,0 +1,100 @@
+banner:
+  title: Welcome! The website is almost done...
+
+social:
+  twitter: ""
+  linkedin: yann-hoffmaaann
+  github: Yann21
+  gitlab: ""
+  gmail: "yann.hoffmann@outlook.de"
+
+about:
+  enable: true
+  content: Master's Student in CS - Final Year
+  button:
+    btnText: Find out more
+    URL: "/about"
+
+skill:
+  enable: true
+  item:
+    - title: Python
+      logo: https://code.fb.com/wp-content/uploads/2016/05/2000px-Python-logo-notext.svg_.png
+      description: Details coming soon, contact me if you want to know more
+    - title: TensorFlow
+      logo: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/957px-Tensorflow_logo.svg.png
+      description: Details coming soon, contact me if you want to know more
+    - title: Scala
+      logo: https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png
+      description: Details coming soon, contact me if you want to know more
+    - title: R-studio
+      logo: https://rud.is/b/wp-content/uploads/2016/02/RStudio.png
+      description: Details coming soon, contact me if you want to know more
+    - title: SQL
+      logo: https://www.boylesoftware.com/blog/wp-content/uploads/2016/03/240x240_mysql_logo.jpg
+      description: Details coming soon, contact me if you want to know more
+    - title: Excel
+      logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Microsoft_Excel_Logo.svg/1024px-Microsoft_Excel_Logo.svg.png
+      description: Details coming soon, contact me if you want to know more
+
+experience:
+  enable: true
+  item:
+    - logo: https://aspie-friendly.fr/wp-content/uploads/2018/05/UPEC.jpg
+      title: Machine Learning Research Assistant
+      company: UPEC University
+      duration: June 2019 (2 months)
+
+hackathons:
+  enable: true
+  item:
+    - title: Ideation Camp 6 2020
+      description: Entrepreneurship Workshop
+      image: https://media-exp1.licdn.com/dms/image/C4D0BAQEaRNoG5bJNlQ/company-logo_200_200/0?e=2159024400&v=beta&t=MET8cSVYDmnlye8AcEAk-mVFvt1TCrpaZz7AbMBWUko
+      url: none
+    - title: Lauz'Hack 2019
+      description: Protein Molecule Visualization
+      image: https://news.mlh.io/wp-content/uploads/2016/08/64592c843342-monochromatic_logo.png
+      url: none
+    - title: HackIAthon 2018
+      description: HackIAthon
+      image: https://pbs.twimg.com/profile_images/941692349234769921/soXhFDDW.jpg
+      url: none
+
+certifications:
+  enable: true
+  item:
+    - title: Fix Bug
+      url: https://www.coursera.org/account/accomplishments/verify/JE7VST4W24WR
+      image: https://pbs.twimg.com/profile_images/378800000012653503/d5584d23d53e2c8531681183c3dc622c_400x400.png
+      description: test
+
+education:
+  enable: true
+  item:
+    - title: B.Sc. Computer Science
+      year: 2016 - 2019
+      academy: Sorbonne University
+      image: https://pbs.twimg.com/profile_images/941692349234769921/soXhFDDW.jpg
+    - title: M.Sc. Data Science
+      year: 2019 - Present
+      academy: University of Luxembourg
+      image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/University_of_Luxembourg_logo_%28fr%29.svg/1200px-University_of_Luxembourg_logo_%28fr%29.svg.png
+
+
+leadership:
+  enable: true
+  item:
+    - logo: https://www.rotary-ribi.org/upimages/distreps/1260/Youth/Logos/RYLA-Cols.png
+      title: Young Leader
+      company: Rotary Youth
+      duration: April 2019
+
+portfolio:
+  filter:
+    - label: Machine Learning
+    - value: machine-learning
+    - label: Kaggle
+    - value: kaggle
+    - label: Software Development
+    - value: software-dev
