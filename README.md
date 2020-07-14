@@ -1,5 +1,5 @@
-# hugo-personal-website
-Personal website doubling as takeaway resume, portfolio and blog.
+# Personal website
+My personal website that doubles as a takeaway resume, portfolio and blog.
 
 [Follow the link](http://www.yannhoffmann.com)
 
