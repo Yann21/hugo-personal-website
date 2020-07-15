@@ -7,4 +7,5 @@ authorImage : "https://media-exp1.licdn.com/dms/image/C4D03AQEPt73hqZjfeA/profil
 ---
 
 Hi! I'm Yann.
+
 A curious and enthusiastic software developer with a can-do attitude and a knack for machine learning (ML) algorithms.

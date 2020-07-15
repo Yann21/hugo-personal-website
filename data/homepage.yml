@@ -1,12 +1,11 @@
 banner:
-  title: Welcome! The website is almost done...
+  title: Welcome! <br/>The website is almost done...
 
 social:
   twitter: ""
   linkedin: yann-hoffmaaann
   github: Yann21
-  gitlab: ""
-  gmail: "yann.hoffmann@outlook.de"
+  gitlab: "https://gitlab.uni.lu/yhoffmann"
 
 about:
   enable: true
@@ -43,7 +42,39 @@ experience:
     - logo: https://aspie-friendly.fr/wp-content/uploads/2018/05/UPEC.jpg
       title: Machine Learning Research Assistant
       company: UPEC University
+      description: Enter description
       duration: June 2019 (2 months)
+    - logo:
+      title:
+      company:
+      description: description
+      duration: Present
+
+education:
+  enable: true
+  item:
+    - title: M.Sc. Data Science
+      year: 2019 - Present
+      academy: University of Luxembourg
+      image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/University_of_Luxembourg_logo_%28fr%29.svg/1200px-University_of_Luxembourg_logo_%28fr%29.svg.png
+    - title: B.Sc. Computer Science
+      year: 2016 - 2019
+      academy: Sorbonne University
+      image: https://pbs.twimg.com/profile_images/941692349234769921/soXhFDDW.jpg
+
+
+certifications:
+  enable: true
+  item:
+    - title: Scala Specialization
+      image: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Logo_EPFL.svg/1920px-Logo_EPFL.svg.png
+      url: www.yannhoffmann.com/#
+      description: Scala, Big Data, Spark, Parallelization, Lambda-Calculus
+    - title: Machine Learning
+      url: https://www.coursera.org/account/accomplishments/verify/JE7VST4W24WR
+      image: https://pbs.twimg.com/profile_images/378800000012653503/d5584d23d53e2c8531681183c3dc622c_400x400.png
+      description: Logistic Regression, SVM, PCA, Convolutions
+
 
 hackathons:
   enable: true
@@ -61,25 +92,7 @@ hackathons:
       image: https://pbs.twimg.com/profile_images/941692349234769921/soXhFDDW.jpg
       url: none
 
-certifications:
-  enable: true
-  item:
-    - title: Fix Bug
-      url: https://www.coursera.org/account/accomplishments/verify/JE7VST4W24WR
-      image: https://pbs.twimg.com/profile_images/378800000012653503/d5584d23d53e2c8531681183c3dc622c_400x400.png
-      description: test
 
-education:
-  enable: true
-  item:
-    - title: B.Sc. Computer Science
-      year: 2016 - 2019
-      academy: Sorbonne University
-      image: https://pbs.twimg.com/profile_images/941692349234769921/soXhFDDW.jpg
-    - title: M.Sc. Data Science
-      year: 2019 - Present
-      academy: University of Luxembourg
-      image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/University_of_Luxembourg_logo_%28fr%29.svg/1200px-University_of_Luxembourg_logo_%28fr%29.svg.png
 
 
 leadership:
