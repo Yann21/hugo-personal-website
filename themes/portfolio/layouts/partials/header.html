@@ -1,9 +1,9 @@
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem; background: #161f39">
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@s">
                 {{if .IsHome}}
-                <li class="uk-active "><a style="font-size: 18px; text-transform: none"
+                <li class="uk-active "><a style="font-size: 18px; color: white; text-transform: none"
                         href="{{.Site.BaseURL}}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li>
                 {{else}}
                 <li><a style="font-size: 18px; text-transform: none" href="/">{{ with .Site.Params.Home }} {{ . }}
@@ -18,7 +18,7 @@
                 {{$aURL3 := index $aURL2 1}}
                 {{$page3 := index $page2 1}}
                 {{if eq $aURL3 $page3}}
-                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                <li class="uk-active"><a style="font-size: 18px; color: white; text-transform:none"
                         href="{{ .URL | relURL }}">{{.Name}}</a></li>
                 {{else}}
                 <li><a style="font-size: 18px; text-transform: none" href="{{ .URL | relURL }}">{{.Name}}</a></li>
