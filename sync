@@ -1,3 +1,5 @@
 #!/bin/bash
+# hugo server -D
+hugo -v
 aws s3 sync --acl "public-read" public/ s3://www.yannhoffmann.com
 git add *
