@@ -19,7 +19,7 @@
                 {{$aURL3 := index $aURL2 1}}
                 {{$page3 := index $page2 1}}
                 {{if eq $aURL3 $page3}}
-                <li class="uk-active"><a style="font-size: 18px; color: white; text-transform:none"
+                <li class="uk-active"><a style="font-size: 20px; color: white; text-transform:none"
                         href="{{ .URL | relURL }}">{{.Name}}</a></li>
                 {{else}}
 
@@ -36,14 +36,14 @@
 </div>
 
 <div id="sidenav" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column" style="background: #424659">
 
-        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" style="background: #424659">
             {{if .IsHome}}
-            <li class="uk-active"><a style="font-size: 18px" href="{{.Site.BaseURL}}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+            <li class="uk-active"><a style="font-size: 20px" href="{{.Site.BaseURL}}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
             </li>
             {{else}}
-            <li><a style="font-size: 18px" href="{{.Site.BaseURL}}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li>
+            <li><a style="font-size: 20px" href="{{.Site.BaseURL}}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li>
 
             {{end}}
             {{ range .Site.Menus.main }}
@@ -54,9 +54,9 @@
             {{$aURL3 := index $aURL2 1}}
             {{$page3 := index $page2 1}}
             {{if eq $aURL3 $page3}}
-            <li class="uk-active"><a style="font-size: 18px" href="{{ .URL | relURL }}">{{.Name}}</a></li>
+            <li class="uk-active"><a style="font-size: 20px" href="{{ .URL | relURL }}">{{.Name}}</a></li>
             {{else}}
-            <li><a style="font-size: 18px" href="{{ .URL | relURL }}">{{.Name}}</a></li>
+            <li><a style="font-size: 20px" href="{{ .URL | relURL }}">{{.Name}}</a></li>
             {{end}}
             {{end}}
         </ul>

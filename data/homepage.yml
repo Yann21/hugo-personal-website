@@ -6,6 +6,7 @@ social:
   linkedin: yann-hoffmaaann
   github: Yann21
   gitlab: "https://gitlab.uni.lu/yhoffmann"
+  kaggle: "https://www.kaggle.com/jeky21"
 
 about:
   enable: true
@@ -26,14 +27,14 @@ skill:
     - title: Scala
       logo: https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png
       description: Details coming soon, contact me if you want to know more
-    - title: R-studio
-      logo: https://rud.is/b/wp-content/uploads/2016/02/RStudio.png
+    - title: Spark
+      logo: https://acadgild.com/blog/wp-content/uploads/2018/05/Apache_Spark_logo-1.png
       description: Details coming soon, contact me if you want to know more
     - title: SQL
       logo: https://www.boylesoftware.com/blog/wp-content/uploads/2016/03/240x240_mysql_logo.jpg
       description: Details coming soon, contact me if you want to know more
-    - title: Excel
-      logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Microsoft_Excel_Logo.svg/1024px-Microsoft_Excel_Logo.svg.png
+    - title: Haskell
+      logo: https://chrisconlan.com/wp-content/uploads/2018/06/haskell_logo_2.png
       description: Details coming soon, contact me if you want to know more
 
 experience:

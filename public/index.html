@@ -113,9 +113,9 @@
 </div>
 
 <div id="sidenav" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column" style="background: #424659">
 
-        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" style="background: #424659">
             
             <li class="uk-active"><a style="font-size: 18px" href="http://www.yannhoffmann.com"> Home </a>
             </li>
@@ -261,6 +261,16 @@
     </div>
 </div>
 
+<div id="Spark" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Spark</h2>
+        </div>
+        <p>Details coming soon, contact me if you want to know more</p>
+    </div>
+</div>
+
 <div id="R-studio" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
         <button class="uk-modal-close-default" type="button" uk-close></button>
@@ -276,16 +286,6 @@
         <button class="uk-modal-close-default" type="button" uk-close></button>
         <div class="uk-modal-header">
             <h2 class="uk-modal-title">SQL</h2>
-        </div>
-        <p>Details coming soon, contact me if you want to know more</p>
-    </div>
-</div>
-
-<div id="Excel" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">Excel</h2>
         </div>
         <p>Details coming soon, contact me if you want to know more</p>
     </div>
@@ -319,6 +319,12 @@
             </div>
             
             <div class="imagemargin">
+                <img class="contain skills" src="https://acadgild.com/blog/wp-content/uploads/2018/05/Apache_Spark_logo-1.png" alt="" loading="lazy" style="cursor: pointer"
+                    uk-toggle="target: #Spark">
+                <h4>Spark</h4>
+            </div>
+            
+            <div class="imagemargin">
                 <img class="contain skills" src="https://rud.is/b/wp-content/uploads/2016/02/RStudio.png" alt="" loading="lazy" style="cursor: pointer"
                     uk-toggle="target: #R-studio">
                 <h4>R-studio</h4>
@@ -328,12 +334,6 @@
                 <img class="contain skills" src="https://www.boylesoftware.com/blog/wp-content/uploads/2016/03/240x240_mysql_logo.jpg" alt="" loading="lazy" style="cursor: pointer"
                     uk-toggle="target: #SQL">
                 <h4>SQL</h4>
-            </div>
-            
-            <div class="imagemargin">
-                <img class="contain skills" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Microsoft_Excel_Logo.svg/1024px-Microsoft_Excel_Logo.svg.png" alt="" loading="lazy" style="cursor: pointer"
-                    uk-toggle="target: #Excel">
-                <h4>Excel</h4>
             </div>
             
         </div>
