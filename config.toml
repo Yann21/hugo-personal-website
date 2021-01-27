@@ -1,105 +1,83 @@
-baseURL = "http://www.yannhoffmann.com"
+baseURL = "https://www.yannhoffmann.com/"
 languageCode = "en-us"
-title = "Yann Hoffmann"
-theme = "portfolio"
+title = "My Blog"
+DefaultContentLanguage= "en"
+enableInlineShortcodes = true
+summarylength = 10
+enableEmoji = true
+paginate = 6
+theme = "soho"
+# Too many requests instagram
+ignoreErrors = ["error-remote-getjson"]
 
-[params.plugins]
-  [[params.plugins.css]]
-  URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css"
-  [[params.plugins.js]]
-  URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"
-  [[params.plugins.js]]
-  URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"
-
-# navigation
-[menu]
-  [[menu.main]]
-  name = "About"
-  ordering = "About"
-  URL = "about"
-  [[menu.main]]
-  name = "Portfolio"
-  ordering = "Portfolio"
-  URL = "portfolio"
-  [[menu.main]]
-  name = "Blog"
-  ordering = "Blog"
-  URL = "blog"
-  [[menu.main]]
-  name = "Contact"
-  ordering = "Contact"
-  URL = "contact"
-
+disqusShortname = "yhoffmann"
+googleAnalytics = "G-FY2118S7T9"
 
 [params]
-home = "Home" # What you want the homepage to show up as in the menu bar
-# Meta data
-description = "Empty"
+title = "A Computer Scientist's blog"
 author = "Yann Hoffmann"
+description = "My Blog"
+tagline = "trestsetest"
+
+profilePicture = "images/profile.png"
+copyright = "Yann Hoffmann"
+license = "CC BY-SA 4.0"
+builtWith = false
+licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+mainSections = ["post"]
+
+## Set side bar color
+themeColor = "#5E81AC"
+
+#customCss = ["css/blog.css"]
+#customJs = ["js/blog.js"]
+
+  ## Set as many as you want.
+    [[params.socialIcons]]
+    icon = "fa-linkedin"
+    title = "Linkedin"
+    url = "https://www.linkedin.com/in/yann-hoffmaaann/"
+
+    [[params.socialIcons]]
+    icon = "fa-github"
+    title = "GitHub"
+    url = "https://github.com/Yann21"
 
 
-  [params.contact]
-  formAction = "" # Add your formspree URL here to get emails - Formspree.io
+[menu]
+    [[menu.main]]
+    name = "Archive"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
 
-  # This contains the contact information for the footer
-  [params.footer]
-  email = "contact@yannhoffmann.com"
-  address = "Luxembourg, LU"
-  googlemaps = "https://www.google.com/maps/place/Luxemburg/@49.5303833,2.1903257,5z/data=!4m5!3m4!1s0x479548cd9df32c57:0x400d1d6d1056d10!8m2!3d49.6115998!4d6.131916"
+    [[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 300
+    url = "/about/"
+
+    [[menu.main]]
+    name = "Contact"
+    identifier = "contact"
+    weight = 400
+    url = "/contact/"
+
+
+[taxonomies]
+    category = "categories"
+    series = "series"
+    tag = "tags"
 
 
 [markup]
-  [markup.highlight]
+    [markup.highlight]
     codeFences = true
     guessSyntax = false
     hl_Lines = ""
     lineNoStart = 1
-    lineNos = true
+    lineNos = false
     lineNumbersInTable = true
-    noClasses = true
-    style = "rainbow_dash"
-    tabWidth = 2
-
-
-
-[deployment]
-# By default, files are uploaded in an arbitrary order.
-# Files that match the regular expressions in the "Order" list
-# will be uploaded first, in the listed order.
-order = [".jpg$", ".gif$"]
-
-
-[[deployment.targets]]
-# An arbitrary name for this target.
-name = "mydeployment"
-
-# S3; see https://gocloud.dev/howto/blob/#s3
-# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
-URL = "s3://www.yannhoffmann.com?region=eu-central-1"
-
-# You can use a "prefix=" query parameter to target a subfolder of the bucket:
-# URL = "gs://<Bucket Name>?prefix=a/subfolder/"
-
-# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
-#cloudFrontDistributionID = <ID>
-
-
-# [[deployment.matchers]] configure behavior for files that match the Pattern.
-# Samples:
-
-[[deployment.matchers]]
-#  Cache static assets for 1 year.
-pattern = "^.+\\.(js|css|svg|ttf)$"
-cacheControl = "max-age=31536000, no-transform, public"
-gzip = true
-
-[[deployment.matchers]]
-pattern = "^.+\\.(png|jpg)$"
-cacheControl = "max-age=31536000, no-transform, public"
-gzip = false
-
-[[deployment.matchers]]
-pattern = "^.+\\.(html|xml|json)$"
-gzip = true
-
-
+    noClasses = true # if false, you need to provide you own custom CSS
+    style = "monokai"
+    tabWidth = 4

@@ -1,646 +1,372 @@
 <!DOCTYPE html>
-<style>
-    html {
-        height: 100vh;
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1N6222DW0T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1N6222DW0T');
+</script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  <title>My Blog</title>
+
+  <meta name="description" content="My Blog" />
+
+  
+
+<meta itemprop="name" content="My Blog">
+<meta itemprop="description" content="My Blog">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="My Blog"/>
+<meta name="twitter:description" content="My Blog"/>
+
+
+<meta property="og:title" content="My Blog" />
+<meta property="og:description" content="My Blog" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.yannhoffmann.com/" />
+<meta property="og:updated_time" content="2021-01-25T00:00:00+00:00" /><meta property="og:site_name" content="A Computer Scientist&#39;s blog" />
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "https://www.yannhoffmann.com/#author",
+      "name": "Yann Hoffmann",
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "https://www.yannhoffmann.com/images/profile.png"
+        
+      },
+      "description": "My Blog"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.yannhoffmann.com/#website",
+      "url": "https://www.yannhoffmann.com/",
+      "name": "My Blog",
+      "description": "My Blog",
+      "publisher": {
+        "@id": "https://www.yannhoffmann.com/#author"
+      },
+      "inLanguage": "en-us"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.yannhoffmann.com/#webpage",
+      "url": "https://www.yannhoffmann.com/",
+      "name": "My Blog",
+      "isPartOf": {
+        "@id": "https://www.yannhoffmann.com/#website"
+      },
+      "about": {
+         "@id": "https://www.yannhoffmann.com/#author"
+      },
+      "dateModified": "2021-01-25T00:00:00+00:00",
+      "description": "My Blog",
+      "inLanguage": "en-us",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://www.yannhoffmann.com/"
+          ]
+        }
+      ]
     }
-    body {
-        min-height: 100vh;
-        display: grid;
-        grid-template-rows: 1fr auto;
-    }
-    .footer {
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+<style type="text/css">
+  .sidebar {
+    background-color: #5E81AC;
+  }
+
+  .read-more-link a {
+    border-color: #5E81AC;
+  }
+
+  .pagination li a {
+    color: #5E81AC;
+    border: 1px solid #5E81AC;
+  }
+
+  .pagination li.active a {
+    background-color: #5E81AC;
+  }
+
+  .pagination li a:hover {
+    background-color: #5E81AC;
+    opacity: 0.75;
+  }
+
+  footer a,
+  .content a,
+  .related-posts li a:hover {
+    color: #5E81AC;
+  }
 </style>
-<html lang="en-us"><head>
-  <meta charset="utf-8">
-  <title>Yann Hoffmann</title>
 
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" property="og:description" content="I&#39;m a second year Computer Science student at Durham">
-  <meta name="image" property="og:image" content="/">
-  <meta name="author" content="Yann Hoffmann">
-  <meta name="generator" content="Hugo 0.73.0" />
 
-  <!-- plugins -->
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
   
 
-  <!-- Main Stylesheet -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
   
-  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
-  
-  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+  <link href="https://www.yannhoffmann.com/index.xml" rel="alternate" type="application/rss+xml" title="My Blog" />
+  </head>
 
-
-
-  <!--Favicon-->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="http://icons.iconarchive.com/icons/cornmanthe3rd/plex/72/Other-python-icon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="http://icons.iconarchive.com/icons/cornmanthe3rd/plex/72/Other-python-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-</head>
-<body class="">
-    <div class="wrapper"><div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem; background: #424659">
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav uk-visible@s">
-                
-                <li class="uk-active "><a style="font-size: 18px; color: white; text-transform: none"
-                        href="http://www.yannhoffmann.com"> Home </a></li>
-                
-
-                
-                
-                
-                
-                
-                
-                
-                
-
-                <li><a style="font-size: 20px; text-transform: none" href="/about">About</a></li>
-                
-
-                
-                
-                
-                
-                
-                
-                
-                
-
-                <li><a style="font-size: 20px; text-transform: none" href="/blog">Blog</a></li>
-                
-
-                
-                
-                
-                
-                
-                
-                
-                
-
-                <li><a style="font-size: 20px; text-transform: none" href="/contact">Contact</a></li>
-                
-
-                
-                
-                
-                
-                
-                
-                
-                
-
-                <li><a style="font-size: 20px; text-transform: none" href="/portfolio">Portfolio</a></li>
-                
-
-                
-            </ul>
-
-            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
-
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <img src="/images/profile.png" class="img-circle img-headshot center" alt="Profile Picture">
         </div>
+        
+      
+
+      <h1>My Blog</h1>
+
+      
+      <p class="lead">My Blog</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://www.yannhoffmann.com/">Home</a>
+        </li>
+        <li>
+          <a href="/posts/">Archive</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li><li>
+          <a href="/contact/">Contact</a>
+        </li>
+      </ul>
     </nav>
-</div>
 
-<div id="sidenav" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar uk-flex uk-flex-column" style="background: #424659">
-
-        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" style="background: #424659">
-            
-            <li class="uk-active"><a style="font-size: 20px" href="http://www.yannhoffmann.com"> Home </a>
-            </li>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <li><a style="font-size: 20px" href="/about">About</a></li>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <li><a style="font-size: 20px" href="/blog">Blog</a></li>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <li><a style="font-size: 20px" href="/contact">Contact</a></li>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <li><a style="font-size: 20px" href="/portfolio">Portfolio</a></li>
-            
-            
-        </ul>
-
-    </div>
-</div>
+    <section class="social-icons">
+      
+      <a href="https://www.linkedin.com/in/yann-hoffmaaann/" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/Yann21" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
 
 
-<!-- Hexagon Stylesheet -->
+  <main class="content container">
+  <div class="posts">
+      <article class="post">
+        <h1 class="post-title">
+          <a href="https://www.yannhoffmann.com/post/bessel/">Bessel&#39;s correction</a>
+        </h1>
 
-<link rel="stylesheet" href="/css/hexagon.min.css">
-
-<!-- Index -->
-
-<link rel="stylesheet" href="/css/index.min.css">
-
-<section>
-    <div class="uk-container uk-margin-xlarge-top uk-margin-xlarge-bottom">
-
-        <h1 class="uk-heading-large">Welcome! <br/>The website is almost done...</h1>
-    </div>
-
-
-</section>
-
-<div class="uk-text-center uk-margin-xlarge-bottom uk-margin-xlarge-top">
-    <ul id="social-media" class="icons">
-        
-        
-         
-        <li><a href="https://www.linkedin.com/in/yann-hoffmaaann">
-            <img class="contain" src="https://cdn.svgporn.com/logos/linkedin.svg" alt="LinkedIn" loading="lazy"> </a></li>
-         
-        <li><a href="https://github.com/Yann21"> <img
-                    class="contain" src="https://cdn.svgporn.com/logos/github-icon.svg" alt="GitHub" loading="lazy"> </a></li>
-         
-        <li><a href="https://gitlab.uni.lu/yhoffmann"> <img
-                    class="contain" src="https://cdn.svgporn.com/logos/gitlab.svg" alt="GitLab" loading="lazy"></a></li>
-         
-        <li><a href="https://www.kaggle.com/jeky21"> <img
-                    class="contain" src="kaggle_round.png" alt="Kaggle" loading="lazy"></a></li>
-         
-
-    </ul>
-</div>
-
-
-
-
-
-
-
-<section class="uk-margin-large-top">
-    <div class="uk-container">
-        <div class="uk-text-center">
-            
-            <p class="uk-text-lead">Master&rsquo;s Student in CS - Final Year</p>
-            
-            <a class="uk-button uk-button-text" href="http://www.yannhoffmann.com/about">Find out more</a>
-            
-            
-        </div>
-    </div>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-<div id="Python" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">Python</h2>
-        </div>
-        <p>Details coming soon, contact me if you want to know more</p>
-    </div>
-</div>
-
-<div id="TensorFlow" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">TensorFlow</h2>
-        </div>
-        <p>Details coming soon, contact me if you want to know more</p>
-    </div>
-</div>
-
-<div id="Scala" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">Scala</h2>
-        </div>
-        <p>Details coming soon, contact me if you want to know more</p>
-    </div>
-</div>
-
-<div id="Spark" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">Spark</h2>
-        </div>
-        <p>Details coming soon, contact me if you want to know more</p>
-    </div>
-</div>
-
-<div id="SQL" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">SQL</h2>
-        </div>
-        <p>Details coming soon, contact me if you want to know more</p>
-    </div>
-</div>
-
-<div id="Haskell" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">Haskell</h2>
-        </div>
-        <p>Details coming soon, contact me if you want to know more</p>
-    </div>
-</div>
-
-
-<section class="uk-margin-large-top uk-margin-large-bottom">
-    <div class="uk-container">
-        <h1 class="uk-heading-line uk-text-center uk-heading-medium"><span>Skills</span></h1>
-
-        <p class="uk-text-center uk-text-lead"><i>Click the images below to find out more</i></p>
-        <div class="uk-child-width-1-6@l uk-child-width-1-3@m uk-child-width-1-3@s uk-child-width-1-2 uk-text-center uk-flex-center"
-            uk-grid>
-            
-            <div class="imagemargin">
-                <img class="contain skills" src="https://code.fb.com/wp-content/uploads/2016/05/2000px-Python-logo-notext.svg_.png" alt="" loading="lazy" style="cursor: pointer"
-                    uk-toggle="target: #Python">
-                <h4>Python</h4>
-            </div>
-            
-            <div class="imagemargin">
-                <img class="contain skills" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/957px-Tensorflow_logo.svg.png" alt="" loading="lazy" style="cursor: pointer"
-                    uk-toggle="target: #TensorFlow">
-                <h4>TensorFlow</h4>
-            </div>
-            
-            <div class="imagemargin">
-                <img class="contain skills" src="https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png" alt="" loading="lazy" style="cursor: pointer"
-                    uk-toggle="target: #Scala">
-                <h4>Scala</h4>
-            </div>
-            
-            <div class="imagemargin">
-                <img class="contain skills" src="https://acadgild.com/blog/wp-content/uploads/2018/05/Apache_Spark_logo-1.png" alt="" loading="lazy" style="cursor: pointer"
-                    uk-toggle="target: #Spark">
-                <h4>Spark</h4>
-            </div>
-            
-            <div class="imagemargin">
-                <img class="contain skills" src="https://www.boylesoftware.com/blog/wp-content/uploads/2016/03/240x240_mysql_logo.jpg" alt="" loading="lazy" style="cursor: pointer"
-                    uk-toggle="target: #SQL">
-                <h4>SQL</h4>
-            </div>
-            
-            <div class="imagemargin">
-                <img class="contain skills" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Haskell-Logo.svg/1200px-Haskell-Logo.svg.png" alt="" loading="lazy" style="cursor: pointer"
-                    uk-toggle="target: #Haskell">
-                <h4>Haskell</h4>
-            </div>
-            
+        <div class="post-date">
+          <time datetime="2021-01-25T00:00:00Z">Jan 25, 2021</time> &middot; 1 min read
         </div>
 
-    </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-<section class="uk-margin-xlarge-bottom">
-    <div class="uk-container">
-
-        <h1 class="uk-heading-line uk-heading-medium uk-text-center uk-margin-large-bottom"><span>Work Experience</span></h1>
-
-
-        <div class=" uk-grid-large uk-child-width-1-3@s uk-child-width-1  uk-text-center uk-flex-center" uk-grid
-            style="padding-left: 20px; padding-right: 20px">
-
-            
-            <div>
-                <div class="uk-card uk-card-default uk-height-max-large">
-                    <div class="uk-card-media-top">
-                        <img class="contain experience" src="https://aspie-friendly.fr/wp-content/uploads/2018/05/UPEC.jpg" alt="" style="padding: 20px" loading="lazy">
-                    </div>
-                    <div class="uk-card-body" style="padding-top: 0">
-                        <div style="height: 5em">
-                            <h3 class="uk-card-title">Machine Learning Research Assistant</h3>
-                        </div>
-                        <p style="height: 4em">UPEC University</p>
-                        <p>June 2019 (2 months)</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <div class="uk-card uk-card-default uk-height-max-large">
-                    <div class="uk-card-media-top">
-                        <img class="contain experience" src="" alt="" style="padding: 20px" loading="lazy">
-                    </div>
-                    <div class="uk-card-body" style="padding-top: 0">
-                        <div style="height: 5em">
-                            <h3 class="uk-card-title"></h3>
-                        </div>
-                        <p style="height: 4em"></p>
-                        <p>Present</p>
-                    </div>
-                </div>
-            </div>
-            
+        <div>
+          Short proof of why the MLE is a biased estimator in the case of normally distributed data.
         </div>
-    </div>
 
-</section>
-
-
-
-
-
-
-
-
-
-
-<section class="uk-margin-xlarge-bottom">
-    <div class="uk-container">
-
-        <h1 class="uk-heading-line uk-heading-medium uk-text-center uk-margin-large-bottom"><span>Education</span></h1>
-
-
-        <div class=" uk-grid-large uk-child-width-1-3@s uk-child-width-1  uk-text-center uk-flex-center" uk-grid
-            style="padding-left: 20px; padding-right: 20px">
-
-            
-            <div>
-                <div class="uk-card uk-card-default uk-height-max-large">
-                    <div class="uk-card-media-top">
-                        <img class="contain experience" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/University_of_Luxembourg_logo_%28fr%29.svg/1200px-University_of_Luxembourg_logo_%28fr%29.svg.png" alt="" style="padding: 20px" loading="lazy">
-                    </div>
-                    <div class="uk-card-body" style="padding-top: 0">
-                        <div style="height: 5em">
-                            <h3 class="uk-card-title">M.Sc. Data Science</h3>
-                        </div>
-                        <p style="height: 4em">University of Luxembourg</p>
-                        <p>2019 - Present</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <div class="uk-card uk-card-default uk-height-max-large">
-                    <div class="uk-card-media-top">
-                        <img class="contain experience" src="https://pbs.twimg.com/profile_images/941692349234769921/soXhFDDW.jpg" alt="" style="padding: 20px" loading="lazy">
-                    </div>
-                    <div class="uk-card-body" style="padding-top: 0">
-                        <div style="height: 5em">
-                            <h3 class="uk-card-title">B.Sc. Computer Science</h3>
-                        </div>
-                        <p style="height: 4em">Sorbonne University</p>
-                        <p>2016 - 2019</p>
-                    </div>
-                </div>
-            </div>
-            
+        <div class="read-more-link">
+          <a href="https://www.yannhoffmann.com/post/bessel/">Read More</a>
         </div>
-    </div>
+      </article>
+      <article class="post">
+        <h1 class="post-title">
+          <a href="https://www.yannhoffmann.com/post/todo/">Upcoming</a>
+        </h1>
 
-</section>
-
-
-
-
-
-
-
-<section class="uk-margin-xlarge-bottom">
-    <div class="uk-container">
-
-        <h1 class="uk-heading-line uk-heading-medium uk-text-center uk-margin-large-bottom"><span>Certifications</span></h1>
-
-        <p class="uk-text-center uk-text-lead"><i>Click the images below to view the proof</i></p>
-
-        <div class=" uk-grid-large uk-child-width-1-3@s uk-child-width-1  uk-text-center uk-flex-center" uk-grid
-            style="padding-left: 20px; padding-right: 20px">
-
-            
-            <div>
-                <div class="uk-card uk-card-default uk-height-max-large">
-                    <div class="uk-card-media-top">
-                        <img class="contain experience" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Logo_EPFL.svg/1920px-Logo_EPFL.svg.png" alt="" style="padding: 20px" loading="lazy">
-                    </div>
-                    <div class="uk-card-body" style="padding-top: 0">
-                        <div style="height: 5em">
-                            <h3 class="uk-card-title">Scala Specialization</h3>
-                        </div>
-                        <p style="height: 4em">Spark, Big Data, Parallelization, λ-calculus</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <div class="uk-card uk-card-default uk-height-max-large">
-                    <div class="uk-card-media-top">
-                        <img class="contain experience" src="https://pbs.twimg.com/profile_images/378800000012653503/d5584d23d53e2c8531681183c3dc622c_400x400.png" alt="" style="padding: 20px" loading="lazy">
-                    </div>
-                    <div class="uk-card-body" style="padding-top: 0">
-                        <div style="height: 5em">
-                            <h3 class="uk-card-title">Machine Learning</h3>
-                        </div>
-                        <p style="height: 4em">Logistic Regression, SVM, PCA, Convolutions</p>
-                    </div>
-                </div>
-            </div>
-            
+        <div class="post-date">
+          <time datetime="2021-01-24T00:00:00Z">Jan 24, 2021</time> &middot; 1 min read
         </div>
-    </div>
 
-</section>
+        <div>
+          The todo list starts here:
+  Automation
+ Posts metadata How to convert files to md?
+        </div>
 
+        <div class="read-more-link">
+          <a href="https://www.yannhoffmann.com/post/todo/">Read More</a>
+        </div>
+      </article>
+      <article class="post">
+        <h1 class="post-title">
+          <a href="https://www.yannhoffmann.com/post/lightning/">Bitcoin&#39;s Lightning Probe</a>
+        </h1>
 
+        <div class="post-date">
+          <time datetime="2021-01-11T00:00:00Z">Jan 11, 2021</time> &middot; 1 min read
+        </div>
 
+        <div>
+          Send random invoices to a targeted node and discover how much money the node has in its Lightning account.
+        </div>
 
+        <div class="read-more-link">
+          <a href="https://www.yannhoffmann.com/post/lightning/">Read More</a>
+        </div>
+      </article>
+      <article class="post">
+        <h1 class="post-title">
+          <a href="https://www.yannhoffmann.com/post/forks/">GitHub Forks</a>
+        </h1>
 
+        <div class="post-date">
+          <time datetime="2021-01-01T00:00:00Z">Jan 1, 2021</time> &middot; 1 min read
+        </div>
 
+        <div>
+          Link to my GitHub.
+List  Tensorflow models - Pre-trained model from the tensorflow zoo.
+        </div>
 
+        <div class="read-more-link">
+          <a href="https://www.yannhoffmann.com/post/forks/">Read More</a>
+        </div>
+      </article>
+      <article class="post">
+        <h1 class="post-title">
+          <a href="https://www.yannhoffmann.com/post/filteractivation/">CNN and Filter Activation</a>
+        </h1>
 
+        <div class="post-date">
+          <time datetime="2020-12-10T00:00:00Z">Dec 10, 2020</time> &middot; 1 min read
+        </div>
 
-<section class="uk-margin-large-bottom">
-    <div class="uk-container">
-        <h1 class="uk-heading-line uk-heading-medium uk-text-center"><span>Hackathons</span></h1>
-    </div>
-    <p class="uk-text-center uk-text-lead"><i>Hover over the logos to find out more</i></p>
-</section>
-<div class="uk-container uk-margin-large-bottom uk-text-center">
-    <ul id="hexGrid">
-        
-        <li class="hex">
-            <div class="hexIn">
-                <div class="hexLink">
-                    <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQEaRNoG5bJNlQ/company-logo_200_200/0?e=2159024400&amp;v=beta&amp;t=MET8cSVYDmnlye8AcEAk-mVFvt1TCrpaZz7AbMBWUko" alt="Ideation Camp 6 2020" loading="lazy" />
-                    
-                    <div style="all:unset">
+        <div>
+          Model: MobileNet 160x160
+ Gradient ascent and resizing
+ Original inspiration: Medium post
+        </div>
 
-                        <h1>
-                            Ideation Camp 6 2020</h1>
-                    </div>
-                    
-                    
-                    <div style="all:unset">
-                        <p>
-                            Entrepreneurship Workshop</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </li>
-        
-        <li class="hex">
-            <div class="hexIn">
-                <div class="hexLink">
-                    <img src="https://news.mlh.io/wp-content/uploads/2016/08/64592c843342-monochromatic_logo.png" alt="Lauz&#39;Hack 2019" loading="lazy" />
-                    
-                    <div style="all:unset">
+        <div class="read-more-link">
+          <a href="https://www.yannhoffmann.com/post/filteractivation/">Read More</a>
+        </div>
+      </article>
+      <article class="post">
+        <h1 class="post-title">
+          <a href="https://www.yannhoffmann.com/post/soho/">Soho Theme</a>
+        </h1>
 
-                        <h1>
-                            Lauz&#39;Hack 2019</h1>
-                    </div>
-                    
-                    
-                    <div style="all:unset">
-                        <p>
-                            Protein Molecule Visualization</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </li>
-        
-        <li class="hex">
-            <div class="hexIn">
-                <div class="hexLink">
-                    <img src="https://pbs.twimg.com/profile_images/941692349234769921/soXhFDDW.jpg" alt="HackIAthon 2018" loading="lazy" />
-                    
-                    <div style="all:unset">
+        <div class="post-date">
+          <time datetime="2020-05-01T00:00:00Z">May 1, 2020</time> &middot; 1 min read
+        </div>
 
-                        <h1>
-                            HackIAthon 2018</h1>
-                    </div>
-                    
-                    
-                    <div style="all:unset">
-                        <p>
-                            HackIAthon</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </li>
-        
-    </ul>
-</div>
+        <div>
+          Soho is a minimalist two-column hugo theme based on Hyde and inspired by the success of Flex.
+        </div>
 
+        <div class="read-more-link">
+          <a href="https://www.yannhoffmann.com/post/soho/">Read More</a>
+        </div>
+      </article>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-<footer class="footer">
-  <div class="uk-container">
-
-
-    <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
-      <div class="uk-margin-small-bottom">
-        <h5 class="uk-margin-small-bottom">Email</h5>
-        <a href="mailto:contact@yannhoffmann.com">contact@yannhoffmann.com</a>
-
-      </div>
-      <div>
-        <h5 class="uk-margin-small-bottom">Address</h5>
-                  <div uk-lightbox>
-                    <a href="https://www.google.com/maps/place/Luxemburg/@49.5303833,2.1903257,5z/data=!4m5!3m4!1s0x479548cd9df32c57:0x400d1d6d1056d10!8m2!3d49.6115998!4d6.131916" data-caption="Luxembourg, LU"
-                      data-type="iframe">Luxembourg, LU</a>
-      </div>
-      </div>
-
-    </div>
+  
+<ul class="pagination">
+  <li class="page-item">
+    <a href="/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+  </li>
+  <li class="page-item disabled">
+    <a  class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+  </li>
+  <li class="page-item active">
+    <a class="page-link" href="/">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/page/2/">2</a>
+  </li>
+  <li class="page-item">
+    <a href="/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+  </li>
+  <li class="page-item">
+    <a href="/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+  </li>
+</ul>
 
 
+  </main>
 
+  <footer>
+  <div>
+    <p>
+      &copy; Yann Hoffmann 2021
 
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
 
-  <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
-    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
-  width: 1.2em;" alt="Creative Commons">
-    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
-  width: 1.2em;" alt="CC-BY">
-    2020
-    Yann Hoffmann
-
-
+      
+    </p>
   </div>
 </footer>
 
 
-<!-- JS Plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
 
+  
+
+  
 </body>
 </html>
