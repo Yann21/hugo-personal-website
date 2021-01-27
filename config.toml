@@ -81,3 +81,11 @@ themeColor = "#5E81AC"
     noClasses = true # if false, you need to provide you own custom CSS
     style = "monokai"
     tabWidth = 4
+
+[deployment]
+order = [".jpg$", ".gif$"]
+
+[[deployment.targets]]
+name = "deployment"
+URL = "s3://www.yannhoffmann.com?region=eu-central-1"
+exclude = ".git/*"
