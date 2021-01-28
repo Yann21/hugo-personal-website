@@ -1,7 +1,8 @@
 #!/bin/bash
 # hugo server -D
 hugo -v
-aws s3 sync --acl "public-read" public/ s3://www.yannhoffmann.com
+#aws s3 sync --acl "public-read" public/ s3://www.yannhoffmann.com
+hugo deploy
 git add *
 
 touch public
