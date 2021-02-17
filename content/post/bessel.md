@@ -36,9 +36,11 @@ $$
 \end{cases}
 $$
 
+---
 The reason why we might get this result is that when we are measuring the
 variation with respect to the sample mean, we are acting is if there was an 
 additional sample in the average, thus removing one degree of freedom. 
+
 Conversely, the MLE of the variance with respect to the true population mean 
 is unbiased. This can be seen in the factor n-1/n which tends to 1 as the sample
 mean reaches the true population mean.

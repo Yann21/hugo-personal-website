@@ -1,17 +1,20 @@
 +++
-title = "Upcoming"
+title = "Coming Soon"
 date = "2021-01-24"
 description = "What better place is there to put a TODO about a website than on the website?"
 tags = []
 math = true
 +++
+Loose personal todo list for the website.
 
-The todo list starts here:
+---
+
+The list starts here:
 * Automation
   * Posts metadata
   * How to convert files to md?
   * How to store posts?
-  * Building and synchronizing with AWS
+  * :heavy_check_mark: Building and synchronizing with AWS
 
 * UI
   * Add spacing between icons

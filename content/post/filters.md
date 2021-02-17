@@ -1,5 +1,5 @@
 +++
-title = "CNN and Filter Activation"
+title = "CNN Filter Activation"
 date = "2020-12-10"
 description = "Add description"
 tags = []
