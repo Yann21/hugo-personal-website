@@ -27,7 +27,7 @@ Dataset: MNIST 28x28 dimensions
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~Yann21/1.embed" height="525" width="100%"></iframe>
 {{</rawhtml>}}
 
-## PCA followed by T-SNE
+## PCA followed by t-SNE
 {{<rawhtml>}}
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~Yann21/8.embed" height="525" width="100%"></iframe>
 {{</rawhtml>}}
