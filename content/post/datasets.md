@@ -15,4 +15,5 @@ keras.datasets.mnist.load_dataset()
 ```
 
 
-* http://www.image-net.org/
+* [ImageNet](http://www.image-net.org/)
+* UCI (UC Irvine) ML [Repository](https://archive.ics.uci.edu)

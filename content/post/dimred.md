@@ -21,13 +21,17 @@ A quick tour of different dimensionality reduction techniques. Why are they usef
 ---
 
 Dataset: MNIST 28x28 dimensions
+![mnist_dataset](/posts/dimred/MNIST_dataset.gif)
+Different colors correspond to different labels. Clusters of the same color
+suggest that the dimensionality reduction algorithm has properly understood
+the structure of the data. As a result, identical numbers end up near one another.
 
-## PCA
+## PCA(3)
 {{<rawhtml>}}
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~Yann21/1.embed" height="525" width="100%"></iframe>
 {{</rawhtml>}}
 
-## PCA followed by t-SNE
+## PCA(50) followed by t-SNE
 {{<rawhtml>}}
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~Yann21/8.embed" height="525" width="100%"></iframe>
 {{</rawhtml>}}
