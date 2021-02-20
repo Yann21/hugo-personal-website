@@ -21,8 +21,8 @@ A quick tour of different dimensionality reduction techniques. Why are they usef
 ---
 
 Dataset: MNIST 28x28 dimensions
-![mnist_dataset](/posts/dimred/MNIST_dataset.gif)
-Different colors correspond to different labels. Clusters of the same color
+![mnist_dataset](/posts/dimred/MNIST_dataset.jpg)
+In the plots below, different colors correspond to different labels. Clusters of the same color
 suggest that the dimensionality reduction algorithm has properly understood
 the structure of the data. As a result, identical numbers end up near one another.
 
