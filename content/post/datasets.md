@@ -17,3 +17,7 @@ keras.datasets.mnist.load_dataset()
 
 * [ImageNet](http://www.image-net.org/)
 * UCI (UC Irvine) ML [Repository](https://archive.ics.uci.edu)
+* [OpenML](https://www.openml.org/) datasets
+```
+sklearn.datasets.fetch_openml("mnist_784")
+```

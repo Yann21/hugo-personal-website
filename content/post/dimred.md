@@ -27,11 +27,18 @@ suggest that the dimensionality reduction algorithm has properly understood
 the structure of the data. As a result, identical numbers end up near one another.
 
 ## PCA(3)
+Principal Component Analysis
+$$M = U \Sigma V^T$$
 {{<rawhtml>}}
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~Yann21/1.embed" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~Yann21/1.embed" height="580" width="120%"></iframe>
 {{</rawhtml>}}
 
 ## PCA(50) followed by t-SNE
 {{<rawhtml>}}
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~Yann21/8.embed" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~Yann21/8.embed" height="580" width="120%"></iframe>
+{{</rawhtml>}}
+
+## UMAP
+{{<rawhtml>}}
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~Yann21/11.embed" height="580" width="120%"></iframe>
 {{</rawhtml>}}
