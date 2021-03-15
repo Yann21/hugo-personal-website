@@ -14,4 +14,5 @@ Link to my [GitHub](https://github.com/Yann21).
 * [Jeff Heaton Kaggles](https://github.com/Yann21/jh-kaggle-util)
 * [Tensorflow models](https://github.com/Yann21/models) - Pre-trained model from the tensorflow zoo.
 * [Ansible examples](https://github.com/Yann21/ansible-examples)
-* [Dockerfiles](https://github.com/Yann21/ansible-examples)
+* [Dockerfiles](https://github.com/Yann21/dockerfiles)
+* [Awesome ML](https://github.com/josephmisiti/awesome-machine-learning#python-kaggle-competition-source-code)

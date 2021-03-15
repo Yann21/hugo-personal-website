@@ -11,7 +11,7 @@ Compiling a list of datasets.
 ---
 ```
 import keras
-keras.datasets.mnist.load_dataset()
+keras.datasets.mnist.load_data()
 ```
 
 
@@ -21,3 +21,14 @@ keras.datasets.mnist.load_dataset()
 ```
 sklearn.datasets.fetch_openml("mnist_784")
 ```
+[TFDS](https://blog.tensorflow.org/2019/02/introducing-tensorflow-datasets.html)
+```
+import tensorflow.datasets as tfds
+tfds.load("mnist", split="train", with_info=True)
+```
+
+## Scraping
+* beautiful soup
+* pygithub
+* Bing image search API
+* 
