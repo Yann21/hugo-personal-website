@@ -16,3 +16,4 @@ Link to my [GitHub](https://github.com/Yann21).
 * [Ansible examples](https://github.com/Yann21/ansible-examples)
 * [Dockerfiles](https://github.com/Yann21/dockerfiles)
 * [Awesome ML](https://github.com/josephmisiti/awesome-machine-learning#python-kaggle-competition-source-code)
+* [Awesome Postgres](https://github.com/dhamaniasad/awesome-postgres)
