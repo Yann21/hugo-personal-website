@@ -5,8 +5,9 @@ description = "Add description"
 tags = []
 +++
 
-Send random invoices to a targeted node and discover how much money the node
+Send random invoices to an unsuspecting node and discover how much money the node
 has in its Lightning account.
+[Link to lightning explorer](https://explorer.acinq.co/)
 
 {{<rawhtml>}}
 <script src="https://gist.github.com/Yann21/06fa56e4f1ef3b5d60bdcbecace5a14e.js"></script>
