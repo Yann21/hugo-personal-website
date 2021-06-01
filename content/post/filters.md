@@ -24,13 +24,13 @@ Gradient ascent and resizing
 
 <!-- the JS variables for the listing -->
 <script type="text/javascript">
-  var S2BL_IGNORE_PATH = true;
+  // var S2BL_IGNORE_PATH = true;
   var BUCKET_NAME = 'filter-activation';
-  var BUCKET_URL = 'https://filter-activation.eu-central-1.amazonaws.com';
-  var S3B_ROOT_DIR = '/';
-  var S3B_SORT = 'DEFAULT';
-  var EXCLUDE_FILE = 'index.html';  // change to array to exclude multiple files
-  var AUTO_TITLE = true;
+  // var BUCKET_URL = 'https://filter-activation.eu-central-1.amazonaws.com';
+  // var S3B_ROOT_DIR = '/';
+  // var S3B_SORT = 'DEFAULT';
+  // var EXCLUDE_FILE = 'index.html';  // change to array to exclude multiple files
+  // var AUTO_TITLE = true;
   var S3_REGION = 'eu-central-1'; // for us-east-1
 </script>
 
