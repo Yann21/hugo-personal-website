@@ -15,6 +15,7 @@ Gradient ascent and resizing
 ![gradientascent_animation](/posts/filteractivation/final.gif)
 <img src="/posts/filteractivation/final.gif" />
 
+<a href="https://github.com/rufuspollock/s3-bucket-listing">s3-bucket-listing</a>
 {{<rawhtml>}}
 <div id="navigation"></div>
 <div id="listing"></div>
