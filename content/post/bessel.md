@@ -23,11 +23,11 @@ Short proof of why the MLE of the variance is a biased estimator.
 
 $$ \mathop{\mathbb{E}}[\sigma_{ML}^2] = \mathop{\mathbb{E}}[\frac{1}{n} \sum_{i=1}^n(x_i - \mu_{ML})^2] $$
 
-$$ = \color{red}\mathop{\mathbb{E}}[\sum{i=1}^n x_i^2] \color{black} -
+$$ = \color{red}\mathop{\mathbb{E}}[\sum_{i=1}^n x_i^2] \color{black} -
      \color{blue}2 \mathop{\mathbb{E}}[x_i \mu_{ML}]\color{black} +
      \color{green}\mathop{\mathbb{E}}[\mu_{ML}^2] \color{black}$$
 
-$$ = \color{red} \frac{1}{n} \sum{i=1}^n \mathbb{E}[x_i^2] \color{black} -
+$$ = \color{red} \frac{1}{n} \sum_{i=1}^n \mathbb{E}[x_i^2] \color{black} -
      \color{blue} \frac{2}{n} \mathop{\mathbb{E}}[x_i \frac{1}{n} \sum_{j=1}^n x_j] \color{black} +
      \color{green} \frac{1}{n^2} \mathop{\mathbb{E}}[(\sum_{i=1}^n x_i)^2]\color{black}$$
 
